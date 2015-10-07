@@ -13,31 +13,24 @@
 }
             section {
     width: 100vw;
-    height: 60vh;
-    background-color: rgba(0, 128, 0, 0.16);
-    margin: 2px;
+    height: 80vh;
+    background-color: rgb(158, 236, 204);
+    margin: 4px;
     box-sizing: border-box;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
-    aside {
+   aside,nav {
     margin: 2px auto;
     height: 100%;
     width: 20%;
     background-color: rgba(0, 128, 0, 0.19);
-    border-radius: 5px;
-        box-sizing: border-box;
-     box-shadow: 0px 0px 3px 0.3px rgba(0, 0, 0, 0.6);
+    /* border-right: 1px rgb(0, 0, 0) solid; */
+    box-sizing: border-box;
+    box-shadow: 2px 0px 3px 0.3px rgba(16, 16, 16, 0.59);
     float: left;
 }    
-            nav {
-    height: 100%;
-    width: 20%;
-    margin: 2px;
-    background-color: rgb(175, 215, 175);
-    float: right;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 3px 0.3px rgba(0, 0, 0, 0.6);
+            .right {
+    	float:right;
 }
    footer {
     width: 100vw;
@@ -53,7 +46,7 @@
         <header></header>
         <section>
             <aside></aside>
-            <nav></nav>
+            <nav class="right"></nav>
         </section>
         <footer></footer>
     </body>
