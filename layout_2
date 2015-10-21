@@ -1,0 +1,122 @@
+<!doctyp>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            *{
+                margin: 0px;
+                box-sizing: border-box;
+                
+            }
+            body{
+                display: flex;
+            }
+            aside {
+    width: 20vw;
+    height: 200vh;
+    background-color: gainsboro;
+    display: flex;
+    float: left;
+    display: table-row;
+}
+            .aside_child1{
+                height: 30vh;
+                width: 100%;
+                background: rgba(171, 171, 171, 0.84);
+                
+            }
+            .aside_child2{
+    height: 60vh;
+    background-color: transparent;
+    flex-direction: column;
+            }
+            .aside_child_div{
+   height: 28%;
+    background-color: grey;
+    flex: 1;
+    margin: 12%;
+}
+            main {
+                flex: 1;
+                height: 100vh;
+}
+            header {
+        height: 50vh;
+        flex: 1;
+        background-color: rgba(187, 187, 187, 0.46);
+                display: flex;  
+}
+            article {
+    width: 60vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+            .article_child{
+                background-color: grey;
+    height: 25%;
+    width: 30%;
+        margin: 2%;
+            }
+            nav {
+    flex: 1;
+    background-color: #CECECE;
+    flex-direction: column;            
+}
+            .nav_child{
+               background-color: #F2F9F9;
+                height: 33.3%;
+            }
+            
+            
+            section {
+    flex: 1;
+    height: 50vh;
+    background-color: rgba(171, 171, 171, 0.84);
+}
+            .sec2{
+                background-color: grey;
+            }
+            footer{
+    flex: 1;
+    height: 50vh;
+    background-color:rgba(111, 111, 111, 0.95);
+                display: flex;
+}
+            .footer_child{
+                height: 80%;
+                flex: 1;
+                background-color: rgba(105, 102, 102, 0.26);
+                margin: 3%;       
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            <div class="aside_child1" ></div>
+            <div class="aside_child1 aside_child2">
+                <div class="aside_child_div"></div>
+                <div class="aside_child_div"></div>
+                <div class="aside_child_div"></div>
+            </div>
+        </aside>
+        <main>
+            <header>
+                <article>
+                    <div class="article_child"></div>
+                </article>
+                <nav>
+                    <div class="nav_child"></div>
+                    <div class="nav_child"></div>
+                    <div class="nav_child"></div>
+                </nav>
+            </header>
+            <section></section>
+            <section class="sec2"></section>
+            <footer>
+                <div class="footer_child"></div>
+                <div class="footer_child"></div>
+            </footer>
+        </main>
+    </body>
+</html>
