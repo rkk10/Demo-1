@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layouts</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        body{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            color: white;
+            font-size: 20px;
+        }
+        body>div:first-child,body>div:nth-child(2) {
+            flex: 50%;
+            background-color: dodgerblue;
+        }
+        body>div:last-child,
+        body>div:nth-child(3),body>div:nth-child(4)
+        {
+            flex:30%;
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>view</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+    section {
+    width: 35vw;
+    height: 33vw;
+    background-color: gainsboro;;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0px rgba(128, 128, 128, 0.3);
+}    
+        header,nav,aside,footer{
+            height: 25%;
+            flex: 1;
+        }
+        footer {
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    float: right;
+    width: 100%;
+}
+        header {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10%;
+    padding-right: 5%;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+        .head {
+    height: 35%;
+    width: 11%;
+    background-color: #A7A7A7;
+    border-radius: 5px;
+}
+        .right {
+        width: 24%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        .right_menu {
+    padding: 5px;
+}
+        img {
+    height: 35px;
+    /* width: 30px; */
+    margin: 5px;
+}
+        nav,aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        h1 {
+    font-size: -webkit-xxx-large;
+    font-family: Segoe UI;
+    font-weight: 100;
+}
+        .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 86%;
+    float: right;
+    color: white;
+    padding: 0px 3px 15px 28px;
+    border-left: 1px dashed rgba(0, 0, 0, 0.81);
+}
+        body {
+    background-image: url(../images/bridges-6v.jpg);
+    background-position: center 75%;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="head"></div>
+            <div class="right">
+                <div class="right_menu">
+                    <img src="../images/pin.png">
+                </div>
+                <div class="right_menu">
+                    <img src="../images/star.png">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        </div>
+        <footer></footer>
+    </section>
+</body>
+</html>

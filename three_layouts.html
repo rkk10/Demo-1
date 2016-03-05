@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        body>section{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 0 5%;
+        }
+        section:first-child{
+            background-color: #94DEFF;
+        }
+        section:last-child{
+            background-color: #A190E4;
+        }
+        section:nth-child(2){
+            background-color:crimson;
+        }
+        .circle {
+            padding: 50px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            box-shadow: 0 40px 100px -9px rgba(0, 0, 0, 0.15);
+        }
+        .rect {
+            padding: 35px 50px;
+            background-color: rgb(231, 219, 253);
+            box-shadow: 0 40px 100px -9px rgba(0, 0, 0, 0.3);
+        }
+        .square {
+            padding: 10px 10px;
+            background-color: antiquewhite;
+            box-shadow: 0 40px 100px -9px rgba(0, 0, 0, 0.31);
+            width: 65%;
+            height: 56%;
+            margin: 50% auto;
+        }               
+        section>.rect>.rect {
+            transform-origin: top center;
+            transform: translateY(-50%);
+        }
+        section>.rect>.rect>.rect {
+            transform-origin: top center;
+            transform: translateY(-87%);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="circle">
+            <div class="circle">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="rect">
+            <div class="rect">
+                <div class="rect"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="square">
+            <div class="square">
+                <div class="square"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
